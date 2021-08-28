@@ -1,9 +1,12 @@
 import React from 'react'
+import styled from 'styled-components'
+
 import './app.css'
 
 const App: React.FC = () => {
 
   return (
+    <Container>
     <div className="app">
       <header className="app-header">
         <p className="app-title">Testing Electron with React.js</p>
@@ -19,7 +22,14 @@ const App: React.FC = () => {
         </div>
       </header>
     </div>
+    </Container>
   )
 }
+
+const Container = styled.div`
+  background-color: cornflowerblue;
+  height: 100vh;
+  padding: 1rem;
+`
 
 export default App
