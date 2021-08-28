@@ -1,16 +1,22 @@
-import React, { useState } from 'react'
+import React from 'react'
+import './app.css'
 
 const App: React.FC = () => {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="app">
       <header className="app-header">
-        <p>Hello Vite + React</p>
+        <p className="app-title">Testing Electron with React.js</p>
 
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <div className="card">
+          <div className="card-picture">
+            <img src="https://images.pexels.com/photos/3616770/pexels-photo-3616770.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" className="card-image" />
+          </div>
+          <div className="card-body">
+            <h3 className="card-title">Card Title</h3>
+            <p className="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, laudantium?</p>
+          </div>
+        </div>
       </header>
     </div>
   )
